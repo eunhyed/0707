@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+*{
+    margin:0 auto;
+    padding:0;
+    list-style:none;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+    display:block;
+}
+
+html{
+    max-width:1200px;
+}
+
+body{
+    width:100%;
+    position:relative;
+}
+
+header{
+    max-width:100%;
+}
+
+/*이미지 슬라이드*/
+
+.imgslide{
+    position:relative;
+}
+
+.imgslide a:not(:first-child){
+    display:block;
+    position:absolute;
+    top:0;
+}
+
+.imgslide img{
+    width:100%;
+    height:auto; 
+}
+
+/*네비게이션*/
+
+nav{
+    padding-top:10px;
+    padding-bottom:10px;
+    width:100%;
+    position:absolute;
+    top:0;
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    max-width:100%;
+}
+
+nav:hover{
+    background:rgba(206, 206, 206, 0.466);
+}
+
+.navi{
+    max-width:100%;
+    display:flex;
+    font-size:13px;
+}
+
+.navi li>a{
+    padding:10px 20px;
+    margin:0 8px;
+    font-weight:bold;
+    color:rgb(56, 56, 56);
+}
+
+.navi li:hover{
+    border-bottom:2px solid rgb(190, 147, 98);
+    letter-spacing:3px;
+}
+
+/*상단 more 버튼*/
+
+.btn{
+    width:100%;
+    position:absolute;
+    margin-top:-18%;
+    text-align:center;
+    line-height:40px;
+}
+
+.btn button{
+    background:none;
+    border:none;
+    color:#fff;
+    text-shadow:3px 3px 3px #000;
+}
+
+/*squre*/
+.squre1{
+    width:100%;
+    line-height:50px;
+    margin-top:-4px;
+    background:#bbbbbb48;
+    text-align:center;
+}
+
+@import;
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 20px;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  text-transform: uppercase;
+  animation: waviy 2s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(2px)
+  }
+  20% {
+    transform: translateY(10px)
+  }
+}
+
+
+/*텍스트그라데이션
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #dbd0fd 0%,
+    #cca8f3 29%,
+    #a2e3ff 67%,
+    #fffc9a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 18px;
+      line-height:30px;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}*/
+
+/*content*/
+
+/*portfolio*/
+.portfolio img{
+    max-width:100%;
+}
+
+.text1{
+    max-width:100%;
+    float:right;
+    padding:8.2%;
+    border:1px solid red;
+    text-align:center;
+    
+}
+
